@@ -1,0 +1,16 @@
+{
+  "name": "gif-land-discord",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "register": "npx tsx src/register.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "wrangler": "^4.0.0"
+  }
+}

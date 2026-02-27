@@ -1,0 +1,9 @@
+name = "gif-land-discord"
+main = "src/index.ts"
+compatibility_date = "2025-03-19"
+
+# Secrets — set each via: wrangler secret put <NAME>
+#
+# DISCORD_PUBLIC_KEY  — from Discord Developer Portal > General Information
+# DISCORD_TOKEN       — from Discord Developer Portal > Bot
+# DISCORD_APP_ID      — from Discord Developer Portal > General Information
