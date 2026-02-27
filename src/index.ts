@@ -105,11 +105,11 @@ function buildGifPicker(gifs: Gif[], query: string): object {
   const actionRows: object[] = [];
   for (let i = 0; i < gifs.length; i += 2) {
     const rowButtons = gifs.slice(i, i + 2).map((gif) => {
-      const label = gif.tags || gif.url.replace(/\.gif$/i, "");
+      const name = gif.url
       return {
         type: 2,
         style: 1,
-        label: `Post: ${label}`.slice(0, 80),
+        label: `Post: ${name}`.slice(0, 80),
         custom_id: `post:${gif.url}||${gif.tags || ""}`.slice(0, 100),
       };
     });
